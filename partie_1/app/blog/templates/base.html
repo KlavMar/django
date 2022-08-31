@@ -1,0 +1,64 @@
+{% load static %}
+<html>
+    <head>
+        <title>Test_page</title>
+        <style>
+            html{
+                background-color: grey;
+            }
+            body{
+              
+                max-width: 750px;
+                margin:3em auto;
+                background-color: white;
+                padding:1em;
+            }
+            figure{
+             
+                display: flex;
+                justify-content: center;
+            }
+            img{
+                max-width: 500px;
+            }
+            a{ 
+            margin:2px;
+            text-decoration: none;
+            color:black;
+        }
+ ul li {
+    list-style: none;
+ }
+        nav ul{
+            display: flex;
+            justify-content: space-around;
+            padding: 1em;
+            flex-flow: row;
+            background-color: beige;
+        }
+        </style>
+    </head>
+
+    <body>
+        <div id="wrapper">
+        <nav>
+            <ul>
+                <li>
+                    <a href="{% url 'home_page' %}">Home</a>
+                </li>
+
+                <li>
+                    <a href="{% url 'image_page' %}">Image</a>
+                </li>
+                
+                <li>
+                   <a href="{% url 'admin:index' %}">Admin</a>
+                </li>
+            </ul>
+        </nav>
+        {% block content %} 
+        {% endblock %}
+
+</div>
+</body>
+</html>

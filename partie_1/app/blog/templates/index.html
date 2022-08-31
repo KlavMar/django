@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+        <section>
+            {% for post in posts %} 
+            <article>
+               <h1>{{post.post_name}}</h1>
+               <small>{{post.date_create}} 
+                {% for categorie in post.categories.all %}
+                <a href="">
+                    #{{ categorie.name }}
+                </a>
+                {% endfor %}
+               </small>
+               <p>{{ post.description }}</p> 
+             
+               <figure>
+                <img src="media/{{post.media.image  }}">
+               </figure>
+               
+          
+            </article>
+            {% endfor %}
+        </section>
+      
+{% endblock %}
