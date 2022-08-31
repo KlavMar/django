@@ -1,5 +1,5 @@
 # django
-<a href="https://portfolio.kevinlamarque.fr/blog/app/django/">Portfolio-blog-django</a>
+<a target="_blank" href="https://portfolio.kevinlamarque.fr/blog/app/django/">Portfolio-blog-django</a>
 # Partie 1 : Initiation
 A travers différentes parties , construisons un blog permettant la gestion des posts, des articles ou de commentaires
 Pré-requis
