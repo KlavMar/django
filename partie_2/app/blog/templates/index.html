@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+        <section>
+            {% for post in posts %} 
+            <article>
+               <h1>{{post.post_name}}</h1>
+               <small>{{post.date_create}} 
+                {% for categorie in post.categories.all %}
+                <a href="{% url 'post_categories' categorie.name %}">
+                    #{{ categorie.name }}
+                </a>
+                {% endfor %}
+               </small>
+               <p>{{ post.description | safe }}</p> 
+             
+               <figure>
+                <img src="media/{{post.media.image  }}">
+               </figure>
+               <a href="{% url 'post_page' post.pk %}">Lire Plus</a>
+               
+          
+            </article>
+            {% endfor %}
+        </section>
+      
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %} 
+
+<section>
+    {% for article in articles %} 
+    <article>
+        <p>{{ article.content | safe  }}</p>
+    </article>
+    {% endfor %}
+    <h3>Votre commentaire</h3>
+    <form action="{% url 'post_page' post.pk %}" method="POST">
+        {% csrf_token %}
+        <input type="text" name="author">
+        <div class="form-group">{{ form.body }}</div>
+        <button type="submit" class="btn btn-dark">Envoyer</button>
+        </form>
+    <h3> Commentaires</h3>
+    {% for comment in comments %}
+    <div class="card my-3">
+        <div class="card-header bg-light">
+            {{ comment.author }}
+        </div>
+        <div class="card-body">
+            <small>{{ comment.created_on }}</small>
+            <p>{{ comment.content }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</section>
+{% endblock %}

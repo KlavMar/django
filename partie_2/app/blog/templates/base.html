@@ -1,0 +1,68 @@
+{% load static %}
+<html>
+    <head>
+        <title>Test_page</title>
+        <style>
+            html{
+                background-color: grey;
+            }
+            body{
+              
+                max-width: 750px;
+                margin:3em auto;
+                background-color: white;
+                padding:1em;
+            }
+            figure{
+             
+                display: flex;
+                justify-content: center;
+            }
+            img{
+                max-width: 500px;
+            }
+            a{ 
+            margin:2px;
+            text-decoration: none;
+            color:black;
+        }
+ ul li {
+    list-style: none;
+ }
+        nav ul{
+            display: flex;
+            justify-content: space-around;
+            padding: 1em;
+            flex-flow: row;
+            background-color: beige;
+        }
+        </style>
+
+    </head>
+<script src ="https://cdnjs.cloudflare.com/ajax/libs/tinymce/6.0.2/tinymce.min.js"></script>
+    <body>
+        <div id="wrapper">
+        <nav>
+            <ul>
+                <li>
+                    <a href="{% url 'home_page' %}">Home</a>
+                </li>
+
+                <li>
+                    <a href="{% url 'image_page' %}">Image</a>
+                </li>
+                
+                <li>
+                   <a href="{% url 'admin:index' %}">Admin</a>
+                </li>
+            </ul>
+        </nav>
+        {% block content %} 
+        
+        {% endblock %}
+
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+</html>

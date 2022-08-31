@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+
+        <section>
+            {% for post in images %}  <!-- default si pas de context_name = object_list-->
+            <article>
+                <img src="/media/{{ post.image }}">
+            </article>
+            {% endfor %}
+        </section>
+{% endblock %}
