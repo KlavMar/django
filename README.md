@@ -1,6 +1,6 @@
 # django
 A travers différentes parties , construisons un blog permettant la gestion des posts, des articles ou de commentaires
-
+# Partie 1 : Initiation
 Pré-requis
 Connaître les bases de Python
 Etre à l'aise avec les fonctions, connaître la programmation orientée objet serait un plus
@@ -46,5 +46,43 @@ Etre curieux
 <li><span><a href="#sources">Les sources</a></span></li>
 </ul>
 
-
+# Partie 2 Initiation partie 2 
+<ul>
+<li><strong>Partie 1 :</strong>
+<ul>
+<li><a href="#add_style">1.1 Ajout de style</a></li>
+<li><a href="#add_article">1.2 Ajout du mod&egrave;le Article</a></li>
+</ul>
+</li>
+<li><strong>Partie 1.2 :</strong>
+<ul>
+<li><a href="#add_venv">1.2.1 Installation de l'environnement virtuel</a></li>
+<li><a href="#add_sql"> 1.2.2 Changement de moteur SQL</a></li>
+</ul>
+</li>
+<li><strong>Partie 2:&nbsp;</strong>
+<ul>
+<li><a href="#add_tinymce">2.1 Installation Tinymce</a></li>
+<li><a href="#update_article">2.2 Modification mod&egrave;le Article</a></li>
+</ul>
+</li>
+<li><strong>Partie 3 :&nbsp;</strong>
+<ul>
+<li><a href="#search_cat">3.1 Gestion des cat&eacute;gories </a>
+<ul>
+<li><a href="#create_vue_cat">3.1.1 Cr&eacute;ation de la vue</a></li>
+<li><a href="#update_url_cat">3.1.2 Modification de l'URL</a></li>
+</ul>
+</li>
+<li><a href="#gestion_comment">3.2 Gestion des commentaires</a>
+<ul>
+<li><a href="#create_model_comment">3.2.1 Cr&eacute;ation de la classe Comment</a></li>
+<li><a href="#create_form">3.2.2 Cr&eacute;ation du formulaire</a></li>
+<li><a href="#update_view_article">3.3.3 Modification de la vue Article</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#sources">Sources</a></li>
+</ul>
 
