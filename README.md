@@ -1,4 +1,12 @@
 # django
+A travers différentes parties , construisons un blog permettant la gestion des posts, des articles ou de commentaires
+
+Pré-requis
+Connaître les bases de Python
+Etre à l'aise avec les fonctions, connaître la programmation orientée objet serait un plus
+Comprendre les fonctionnements de base du Web
+Etre curieux
+
 <ul>
 <li><strong>Partie 1 :&nbsp;</strong>
 <ul>
@@ -37,3 +45,6 @@
 </li>
 <li><span><a href="#sources">Les sources</a></span></li>
 </ul>
+
+
+
