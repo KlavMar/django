@@ -1,6 +1,7 @@
 # django
-A travers différentes parties , construisons un blog permettant la gestion des posts, des articles ou de commentaires
+<a href="https://portfolio.kevinlamarque.fr/blog/app/django/">Portfolio-blog-django</a>
 # Partie 1 : Initiation
+A travers différentes parties , construisons un blog permettant la gestion des posts, des articles ou de commentaires
 Pré-requis
 Connaître les bases de Python
 Etre à l'aise avec les fonctions, connaître la programmation orientée objet serait un plus
